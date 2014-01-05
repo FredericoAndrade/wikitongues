@@ -1,0 +1,66 @@
+.content{
+  position: absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  background:rgba(17,36,47,1);
+  color:white;
+  overflow: hidden;
+}
+.content .speaker{
+  width:100%;
+  height:100%;
+  background: url("../images/eva.png")  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.content video{
+  position:relative;
+  z-index: 1;
+  height:100%;
+}
+.content .metadata{
+  position: absolute;
+  width: 100%;
+  height:180px;
+  top:50%;
+  margin-top:-90px;
+  z-index:50;
+  text-shadow:0 2px 1px rgba(17,36,47,.2);
+}
+.content .metadata, .content .metadata a{
+  font-weight:700;
+}
+.content .metadata h1{
+  font-size: 4.5em;
+  text-align: center;
+  margin-top:0;
+}
+.content .metadata a{
+  position: relative;
+  border:1px white solid;
+  padding:.5% 2%;
+  color:white;
+  text-decoration: none;
+  font-size:2em;
+  left: 50%;
+  margin-left:-75px;
+}
+.content .metadata a:hover{
+  opacity:1;
+}
+.content .next-prev .lArrow, .content .next-prev .rArrow{
+  position: absolute;
+  top:50%;
+  margin-top:-25px;
+  z-index:75;
+}
+.content .next-prev .lArrow{
+  left:15px;
+}
+.content .next-prev .rArrow{
+  right:15px;
+}

@@ -1,0 +1,45 @@
+header, footer{
+  position:absolute;
+  width: 100%;
+  z-index: 100;
+  background:rgba(17,36,47,.9);
+  overflow: auto;
+  height: 50px;
+}
+h2{
+  margin:0;
+  padding:14px;
+  color:white;
+  width:auto;
+  float:left;
+  font-size:1.2em;
+}
+header{
+  box-shadow: 0 2px 0 rgba(15,34,45,.9);
+}
+header a h2{
+  padding-left:0;
+}
+header a.left h2 span{
+  padding-left:5px;
+}
+footer{
+  position: absolute;
+  bottom:0;
+  width:100%;
+  box-shadow: 0 -2px 0 rgba(15,34,45,.9);
+}
+footer .dArrow{
+  position: absolute;
+  left:50%;
+  margin-left:-25px;
+}
+footer ul{
+  margin:0;
+  padding: 0 0 0 10px;
+  overflow: auto;
+}
+footer ul li{
+  float:left;
+  color:white;
+}

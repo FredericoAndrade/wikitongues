@@ -1,0 +1,84 @@
+.dArrow, .planet, .comment, .volume, .expand, .share, .link, .close{
+  height:50px;
+  width: 50px;
+  float: left;
+}
+.star, .starFull{
+  float: left;
+}
+.star, .starFull, .close{
+  height:20px;
+  width: 20px;
+}
+.dArrow{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:0 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.planet{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-50px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.comment{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-100px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.volume{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-150px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.share{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-200px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.expand{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-250px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.logo{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-300px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.lArrow{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-350px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.rArrow{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-400px 0;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.star{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-465px -15px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.starFull{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-515px -15px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.close{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-565px -15px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}

@@ -1,0 +1,135 @@
+.content .transcription{
+  display: none;
+  padding:0 30px;
+  background:rgba(17,36,47,.7);
+  box-sizing:border-box;
+  overflow-y:scroll;
+  position: absolute;
+  top: 52px;
+  bottom:52px;
+  right:0;
+  width:30%;
+  z-index: 100;
+}
+.content .transcriptionAlt{
+  top: 0;
+  bottom:0;
+  right:0;
+  padding:52px 30px;
+}
+.content .transcription .star, .content .transcription .starFull{
+  margin-top: 29px;
+}
+.content .transcription .close{
+  margin-top:15px;
+  float:right;
+}
+.content .transcription .language{
+  padding:30px 0 15px 5px;
+}
+.content .transcription p.native{
+  margin-bottom:0;
+  opacity:.8;
+  font-size:.8em;
+  line-height: 1.4em;
+}
+.content .transcription p.translated{
+  line-height: 2.5em;
+}
+.content .transcription p.english, .content .transcription p.hebrew{
+  position: absolute;
+  top: 121px;
+  font-size:.8em;
+  display: none;
+  width:79%;
+  opacity:.5;
+}
+.content .transcription p.englishAlt, .content .transcription p.hebrewAlt{
+  margin-top:65px;
+}
+p.hebrew span{
+  line-height:27em;
+}
+/*translation interface*/
+.content .transcription .translate{
+padding:15px 0 15px 25px;
+display: block;
+opacity:.5;
+clear: both;
+cursor:pointer;
+}
+.translation{
+  display: none;
+  position:absolute;
+  z-index:125;
+  right:0;
+  top:116px;
+  width:30%;
+  background:rgba(151,161,165,.9);
+}
+.translationScout{
+  height:100%;
+  display: none;
+  width:100%;
+  position:absolute;
+  z-index: 115;
+}
+.translation input{
+  width:100%;
+  padding:15px 0 15px 55px;
+  border:0;
+  box-shadow: none;
+  background:none;
+  color:white;
+  outline:none;
+  font-size: 1em;
+  margin: 0;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:#ccc;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:#ccc;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:#ccc;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:#ccc;
+}
+.translation ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  color:white;
+}
+.translation ul li{
+  /*padding:20px 30px;*/
+  overflow: auto;
+}
+.translation ul li a{
+  color:white;
+  padding:20px 30px;
+  display: block;
+  overflow: auto;
+}
+.translation .language{
+  padding-left:5px;
+}
+.targetLang{
+  display: none;
+  overflow:auto;
+  clear:both;
+}
+.targetLang div{
+  cursor: pointer;
+}
+.targetLang .starFull, .targetLang .star{
+  margin-top:15px !important;
+}
+.targetLang .language{
+  padding:15px 0 8px 5px !important;
+}
+
+
+
