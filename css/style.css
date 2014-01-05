@@ -21,7 +21,7 @@ html, body, a, h2, input{
 a:not(.inactive):hover, ul li a:not(.inactive):hover h2{
   opacity:.7;
 }
-a.inactive h2{
+a.inactive{
   cursor:default;
   opacity:.5;
 }
