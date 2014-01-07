@@ -24,7 +24,7 @@
   margin-top:15px;
   float:right;
 }
-.content .transcription .language{
+.content .transcription .videoLanguage{
   padding:30px 0 15px 5px;
 }
 .content .transcription p.native{
@@ -113,7 +113,7 @@ cursor:pointer;
   display: block;
   overflow: auto;
 }
-.translation .language{
+.translation .translateLanguage{
   padding-left:5px;
 }
 .targetLang{
@@ -127,7 +127,7 @@ cursor:pointer;
 .targetLang .starFull, .targetLang .star{
   margin-top:15px !important;
 }
-.targetLang .language{
+.targetLang .translateLanguage{
   padding:15px 0 8px 5px !important;
 }
 

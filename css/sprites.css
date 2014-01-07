@@ -1,84 +1,95 @@
-.dArrow, .planet, .comment, .volume, .expand, .share, .link, .close{
+.icon.dArrow, .icon.planet, .icon.comment, .icon.volume, .icon.expand, .icon.share, .icon.link, .icon.close, .icon.search, .icon.star, .icon.starFull{
+  float: left;
+}
+.icon.dArrow, .icon.planet, .icon.comment, .icon.volume, .icon.expand, .icon.share, .icon.link{
   height:50px;
   width: 50px;
-  float: left;
 }
-.star, .starFull{
-  float: left;
-}
-.star, .starFull, .close{
+.icon.star, .icon.starFull, .icon.close, .icon.dCarat, .icon.search{
   height:20px;
   width: 20px;
 }
-.dArrow{
+.icon.dArrow{
 background-image:url("../images/sprite-01.svg") ;
   background-position:0 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.planet{
+.icon.planet{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-50px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.comment{
+.icon.comment{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-100px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.volume{
+.icon.volume{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-150px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.share{
+.icon.share{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-200px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.expand{
+.icon.expand{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-250px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.logo{
+.icon.logo{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-300px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.lArrow{
+.icon.lArrow{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-350px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.rArrow{
+.icon.rArrow{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-400px 0;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.star{
+.icon.star{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-465px -15px;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.starFull{
+.icon.starFull{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-515px -15px;
   background-repeat:no-repeat;
   background-color:transparent;
 }
-.close{
+.icon.close{
 background-image:url("../images/sprite-01.svg") ;
   background-position:-565px -15px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.icon.dCarat{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-615px -15px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.icon.search{
+background-image:url("../images/sprite-01.svg") ;
+  background-position:-665px -15px;
   background-repeat:no-repeat;
   background-color:transparent;
 }

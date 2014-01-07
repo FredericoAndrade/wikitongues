@@ -40,7 +40,7 @@ $(document).ready(function(){
                 $(".progress").addClass("progressBarAlt")
                 $(".progressBar").addClass("progressBarAlt")
                 fadeInBuffer = true
-            }, 1000)
+            }, 1500)
         })
     })
 })
@@ -49,9 +49,10 @@ $(document).ready(function(){
 var total = 7000,
 acquired = 56,
 progress = (acquired/total)*100
+
 $(".progress").css("width",progress+"%")
 
-//explore toggle
+//explore page toggle
   $("a.explore").on("click",function(){
     $("div.search").hide()
     $(".transcription").hide()
@@ -68,8 +69,62 @@ $(".progress").css("width",progress+"%")
     $(".progressBar").show()
     $(".progress").show()
   })
+  //explore navigation
+  ////back navigation
+  $(".data .lArrow").on("click",function(){
+    if($(this).parent().hasClass("sub-index-3")){
+      $(this).parent().hide()
+      $(this).parent().siblings(".sub-index-2").show()
+    }
+    if($(this).parent().hasClass("sub-index-2")){
+      $(this).parent().hide()
+      $(this).parent().siblings(".sub-index-1").show()
+    }
+    if($(this).parent().hasClass("sub-index-1")){
+      $(this).parent().hide().parent().hide()
+      $(this).parent().parent().siblings(".explore").show()
+    }
+    if($(this).parent().hasClass("index")){
+      $(this).parent().hide()
+      $(this).parent().siblings(".explore").show()
+    }
+  })
+  ////explore language
+  $(".data>.explore>ul> li>a.language").on("click",function(){
+    $(".data .explore").hide()
+    $(".data .language").show()
+    alert("This is only to demonstrate how the language tab works. Clicking on an available language would take you to the video.")
+  })
+  ////////explore language click
+  $(".data .language.index ul li a").not(".unavailable").on("click",function(){
+    $(".data").fadeOut()
+  })
+  ////explore geography - continent
+  $(".data>.explore>ul> li>a.geography").on("click",function(){
+    $(".data .explore").hide()
+    $(".data .geography").show()
+    $(".data .geography .sub-index-1").show()
+    alert("This is only to demonstrate how the geography tab navigation works. Click on Africa.")
+  })
+  //////explore geography - country
+  $(".data>.geography>.sub-index-1>ul>li>a").on("click",function(){
+    $(".data .geography .sub-index-1").hide()
+    $(".data .geography .sub-index-2").show()
+    alert("This is only to demonstrate how the geography tab navigation works. Click on Ghana.")
+  })
+  ////////explore geography - language
+  $(".data>.geography>.sub-index-2>ul>li>a").on("click",function(){
+    $(".data .geography .sub-index-2").hide()
+    $(".data .geography .sub-index-3").show()
+    alert("This is only to demonstrate how the geography tab navigation works. Clicking on an available language would take you to the video.")
+  })
+  ////////explore geography language click
+  $(".data .geography.index .language ul li a").not(".unavailable").on("click",function(){
+    $(".data").fadeOut()
+  })
 
-//about toggle
+
+//about page toggle
   $("a.about").on("click",function(){
     $("div.search").hide()
     $(".transcription").hide()
@@ -87,7 +142,7 @@ $(".progress").css("width",progress+"%")
     $(".progress").show()
   })
 
-//search toggle
+//search page toggle
 $("a.search").on("click",function(){
   $("div.search").toggle()
   $("div.search input").focus()
@@ -109,7 +164,7 @@ $("a.search").on("click",function(){
     }
   })
 
-  //translation menu toggle
+  ////translation menu toggle
   $(".translate").on("click",function(){
     $(this).css("opacity",0)
     $(".translation").show()
@@ -122,7 +177,7 @@ $("a.search").on("click",function(){
     $(".translation").hide()
   })
 
-//example translation
+//////example translation
   $(".translation ul li a .english").on("click",function(){
     $(".translationScout").hide()
     $(".targetLang").show()
@@ -145,7 +200,7 @@ $("a.search").on("click",function(){
     $(".transcription p.native").addClass("translated")
   })
 
-//example translation reselection
+//////example translation reselection
   $(".targetLang div").on("click",function(){
     $(".targetLang").hide()
     $(".translate").show()
@@ -157,7 +212,7 @@ $("a.search").on("click",function(){
     $(".translation input").focus()
   })
 
-  //example translation close
+  //////example translation close
   $(".targetLang .close").on("click",function(){
     $(".targetLang").hide()
     $(".translate").show().css("opacity",.5)
@@ -175,7 +230,7 @@ $("a.search").on("click",function(){
       $(this).toggleClass("star").toggleClass("starFull")
     })
 
-
+//for development
 
 })
 

@@ -5,6 +5,7 @@ html, body{
 html, body, a, h2, input{
   font-family: 'Raleway', sans-serif;
   font-weight:300;
+  color:white;
 }
 .left{
   float:left;
@@ -21,7 +22,7 @@ html, body, a, h2, input{
 a:not(.inactive):hover, ul li a:not(.inactive):hover h2{
   opacity:.7;
 }
-a.inactive{
+a.inactive, a.unimplemented, .unavailable{
   cursor:default;
   opacity:.5;
 }
