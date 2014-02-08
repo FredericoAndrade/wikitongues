@@ -1,6 +1,6 @@
 Wikitongues
 ===========
-#Local development of Wikitongues website.
+##Local development of Wikitongues website.
 
 *template secondary pages
 *template video
