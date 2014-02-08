@@ -1,4 +1,4 @@
-<html>
+ <html>
   <head>
     <meta charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Raleway:300,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="css/data.css">
     <link rel="stylesheet" href="css/explore.css">
     <link rel="stylesheet" href="css/language-index.css">
+    <link rel="stylesheet" href="css/player.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/jquery.swfobject.1-1-1.min.js"></script>
+    <script src="js/youTubeEmbed.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/interaction.js"></script>
     </head>
 
@@ -44,11 +48,14 @@
         </footer>
 
       <div class="content">
-        <!-- <video class="video" src="http://www.youtube.com/embed/Qv53zmmpM5Q" autoplay preload="auto"></video> -->
-        <div class="speaker"></div>
+
+
+
+        <!-- <div class="speaker"></div> -->
+        <div id="player"></div>
         <div class="metadata">
           <h1 class="title">EVA SPEAKING DUTCH</h1>
-          <a class="listen" href="#">LISTEN</a>
+          <!-- <a class="listen" href="#">LISTEN</a> -->
         </div>
         <div class="next-prev">
           <a href="#" class="icon lArrow left"></a>
