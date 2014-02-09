@@ -1,0 +1,37 @@
+[
+  { "page":"explore",
+    "type":"geography",
+    "category":"continent",
+    "name": "Africa"
+  },
+  { "page":"explore",
+    "type":"geography",
+    "category":"continent",
+    "name": "America-north"
+  },
+  { "page":"explore",
+    "type":"geography",
+    "category":"continent",
+    "name": "America-south"
+  },
+  { "page":"explore",
+    "type":"geography",
+    "category":"continent",
+    "name": "Antarctica"
+  },
+  { "page":"explore",
+    "type":"geography",
+    "category":"continent",
+    "name": "Asia"
+  },
+  { "page":"explore",
+    "type":"geography",
+    "category":"continent",
+    "name": "Australia"
+  },
+  { "page":"explore",
+    "type":"geography",
+    "category":"continent",
+    "name": "Europe"
+  }
+]
