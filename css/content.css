@@ -37,25 +37,27 @@
 .listen{
   position: relative;
   border:1px white solid;
-  padding:.5% 2%;
+  padding:.5% 1.5%;
+  text-align: center;
   color:white;
   text-decoration: none;
   font-size:2em;
-  left: 50%;
-  margin-left:-175px;
+  margin: auto;
+  display: block;
+  width: 110px;
 }
 .listen:hover{
   opacity:1;
 }
-.content .next-prev .lArrow, .content .next-prev .rArrow{
+.content .contentNavigation .lArrow, .content .contentNavigation .rArrow{
   position: absolute;
   top:50%;
   margin-top:-25px;
   z-index:75;
 }
-.content .next-prev .lArrow{
+.content .contentNavigation .lArrow{
   left:15px;
 }
-.content .next-prev .rArrow{
+.content .contentNavigation .rArrow{
   right:15px;
 }

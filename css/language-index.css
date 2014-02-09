@@ -1,40 +1,37 @@
-.data .index, .data .index .sub-index{
-  display:none;
-}
-.data .index{
+.subIndex{
   box-sizing:border-box;
-  padding:150px 20% 0 20%;
+  /*padding:150px 20% 0 20%;*/
   overflow:auto;
   width: 100%;
 }
-.data .index h1{
+.subIndex h1{
   text-align: center;
   font-size: 4.5em;
 }
-.data .index a{
+.subIndex a{
   opacity:.7;
 }
-.data .index .filter{
+.subIndex .filter{
   overflow: auto;
   padding-bottom:8px;
   border-bottom:3px solid rgba(255,255,255,.5);
 }
-.data .index .alphabet{
+.subIndex .alphabet{
   position: absolute;
   left: 50%;
   margin-left: -217px;
 }
-.data .index .alphabet span{
+.subIndex .alphabet span{
   text-transform: capitalize;
   float: left;
   padding:0 3px;
   opacity:.5;
 }
-.data .index .alphabet span:hover{
+.subIndex .alphabet span:hover{
 opacity:.9;
 cursor:pointer;
 }
-.data .index a{
+.subIndex a{
   text-decoration: none;
 }
 .sort{
@@ -46,34 +43,31 @@ cursor:pointer;
   float:right;
   margin:4px 0 0 0;
 }
-.data .index ul{
+.subIndex ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
   overflow-y: scroll;
   height:320px;
 }
-.data .index ul li{
+.subIndex ul li{
   float:left;
   font-size: 1em;
   padding:10px;
   box-sizing:border-box;
 }
-.data .index ul li.col1{
-  clear:left;
-}
-.data .index ul li.col1, .data .index ul li.col2, .data .index ul li.col3, .data .index ul li.col4{
+.subIndex ul li{
   width:25%;
 }
-.data .index .unavailable{
+.subIndex .unavailable{
   opacity:.3;
 }
-.data .index .more{
+.subIndex .more{
   position: absolute;
   left: 50%;
   margin:0 0 0 -4.5px;
 }
-.data .index .lArrow{
+.subIndex .lArrow{
   position: absolute;
   left: 15px;
   top:50%;

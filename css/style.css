@@ -25,6 +25,7 @@ a:not(.inactive):hover, ul li a:not(.inactive):hover h2{
 a.inactive, a.unimplemented, .unavailable{
   cursor:default;
   opacity:.5;
+  pointer-events: none;
 }
 .metadata{
   /*display: none;*/

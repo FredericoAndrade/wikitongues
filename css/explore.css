@@ -1,18 +1,27 @@
-.data>div.explore{
-  display:none;
+div.explore{
+  position: absolute;
+  top: 0;
+  bottom:0;
+  background:rgba(17,36,47,.9);
+  z-index: 80;
+  width:100%;
+  color:white;
   box-sizing:border-box;
   padding:150px 20%;
   overflow:auto;
 }
-.data>div.explore ul{
+div.explore .index{
+  overflow: auto;
+}
+div.explore .index ul{
   list-style-type: none;
   margin:0;
   padding:0;
 }
-.data>div.explore ul li:nth-of-type(3)>a{
+div.explore .index ul li:nth-of-type(3)>a{
 clear:left;
 }
-.data>div.explore ul li a{
+div.explore .index ul li a{
   font-weight: 700;
   text-decoration: none;
   font-size: 2em;
@@ -23,10 +32,10 @@ clear:left;
   text-align: center;
   margin-bottom:20px;
 }
-.data>div.explore h1, .data>div.explore ul li a{
+div.explore .index h1, div.explore .index ul li a{
   color: white;
 }
-.data>div.explore h1{
+div.explore .index h1{
   text-align: center;
   font-size: 4.5em;
 }

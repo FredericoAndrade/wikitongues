@@ -5,6 +5,7 @@ header, footer{
   background:rgba(17,36,47,.9);
   overflow: auto;
   height: 50px;
+  box-sizing: border-box;
 }
 h2{
   margin:0;
@@ -15,6 +16,7 @@ h2{
   font-size:1.2em;
 }
 header{
+  padding:0 14px;
   box-shadow: 0 2px 0 rgba(15,34,45,.9);
 }
 header a h2{
