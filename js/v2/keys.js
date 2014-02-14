@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 // FOOTER
   // Explore button
-  // footer.children("ul").children("li").children(".explore").addClass("inactive")
+  footer.children("ul").children("li").children(".explore").addClass("inactive")
   // Search button
   // footer.children("ul").children("li").children(".search").addClass("inactive")
   // About button

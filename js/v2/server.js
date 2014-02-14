@@ -1,26 +1,24 @@
 var express = require('express'),
     app = express()
 
-// general metadata about Spain's eight native languages
+// general data about the available languages
 
-var languages = require('./languages.json')
+var languages = require('./content.json')
 
-// localhost:8080 introduces api
+// localhost:4000 introduces api
 
 app.get('/', function (req, res) {
-    var returnString = 'Hi there, for raw data on spain, please use /languages.'
+    var returnString = 'Hi there, for raw data on the languages we currently display, please use /languages.'
     res.send(returnString)
 })
 
-// localhost:8080/languages returns stringified data
+// localhost:4000/languages returns stringified data
 
 app.get('/languages', function (req, res){
 
-    var name = req.query.name,
-        nativeName = req.query.nativeName,
-        status = req.query.status,
-        population = req.query.populationL1,
-        distribution = req.query.distribution,
+    var speaker = req.query.speaker,
+        language = req.query.language,
+        videoURL = req.query.videoURL,
         callback = req.query.callback
 
     var returnArray = []
@@ -29,19 +27,15 @@ app.get('/languages', function (req, res){
 
             var qualified = true
 
-            if (name && data.name !== name) {
+            if (speaker && data.speaker !== speaker) {
                 qualified = false
             }
 
-            if (nativeName && data.nativeName !== nativeName) {
+            if (language && data.language !== language) {
                 qualified = false
             }
 
-            if (status && data.status !== status) {
-                qualified = false
-            }
-
-            if (distribution && data.distribution !== distribution) {
+            if (videoURL && data.videoURL !== videoURL) {
                 qualified = false
             }
 
@@ -63,8 +57,8 @@ app.get('/languages', function (req, res){
 
 // run node server.js in terminal
 
-app.listen(8080)
+app.listen(4000)
 
-// terminal will return this message if the server is running. go to localhost:8080 for a look at the data
+// terminal will return this message if the server is running. go to localhost:4000 for a look at the data
 
-console.log('Check out the languages of Spain!')
+console.log('content running!')

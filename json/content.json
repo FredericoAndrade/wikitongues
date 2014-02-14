@@ -1,0 +1,47 @@
+[
+  { "speaker":"Wanyu",
+    "language":"Mandarin",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=B-qxGhkRojc"
+  },
+  { "speaker":"Will",
+    "language":"Mandarin",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=DbArjSCZvOQ"
+  },
+  { "speaker":"YiShan",
+    "language":"Mandarin",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=M2xmsclh3UA"
+  },
+  { "speaker":"Horace",
+    "language":"Louisiana French",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=Vg4cGwY-q2c"
+  },
+  { "speaker":"Louis",
+    "language":"Louisiana French",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=1R5dPw4sYrE"
+  },
+  { "speaker":"Sam",
+    "language":"Louisiana French",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=G0n970JRNII"
+  },
+  { "speaker":"Jenni",
+    "language":"Finnish",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=FxrCNf8utsE"
+  },
+  { "speaker":"Päivi",
+    "language":"Finnish",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=r6xt8HZy1-k"
+  },
+  { "speaker":":Lindie",
+    "language":"Afrikaans",
+    "imageURL":" ",
+    "videoURL":"http://www.youtube.com/watch?v=T_8snLihxWs"
+  }
+]

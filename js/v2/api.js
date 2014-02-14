@@ -5,7 +5,7 @@
 
     console.log(query)
 
-    $.getJSON('http://localhost:8080/languages?' + query + '&callback=?', function (data){
+    $.getJSON('http://localhost:4000/languages?' + query + '&callback=?', function (data){
 
     var display = $('#display')
 
@@ -47,11 +47,11 @@
 })
 
 
-  $('#all').on('click',function(){
+$('#all').on('click',function(){
 
-    var query = $('#form').serialize()
+  var query = $('#form').serialize()
 
-    $.getJSON('http://localhost:8080/languages?' + 'callback=?', function (data){
+  $.getJSON('http://localhost:8080/languages?' + 'callback=?', function (data){
 
     var display = $('#display')
 
@@ -63,30 +63,23 @@
 
       display.append(langElement)
 
-            $('.'+lang.name).hover(function(){
-
+      $('.'+lang.name).hover(function(){
         if(lang.name == "Spanish"){
           $('.imageCom').toggleClass('imageComHover')
         }
 
         $('#'+lang.distribution).toggleClass('imageComHover')
-
       })
 
       $('.'+lang.name).on('click',function(){
-
         if(lang.name == "Spanish"){
           $('.imageCom').toggleClass('imageComHover')
         }
 
         $('#'+lang.distribution).toggleClass('imageComHover')
-
       })
 
       $('#all').on('click',function(e){display.empty().e.stopPropagation()})
-
     })
-
   })
-
 })
